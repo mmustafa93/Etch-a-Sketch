@@ -1,0 +1,32 @@
+/* General Styles */
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+/* Container */
+#container {
+    display: flex;
+    flex-wrap: wrap; /* Ensures squares wrap to the next row */
+    width: 600px; /* Fixed width for consistent layout */
+    border: 2px solid #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    aspect-ratio: 1 / 1; /* Keeps it square (optional if JS controls height) */
+}
+
+/* Grid Squares */
+.grid-square {
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    transition: background-color 0.2s;
+}
+
+.grid-square:hover {
+    background-color: #007BFF; /* Highlight on hover */
+}
