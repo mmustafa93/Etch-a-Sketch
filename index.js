@@ -2,6 +2,8 @@ const container = document.getElementById("container");
 const gridSizeInput = document.getElementById("grid-size");
 const setGridButton = document.getElementById("set-grid");
 
+// this should work
+
 function createGrid(size) {
     container.innerHTML = ""; // Clear the existing grid
     const squareSize = 600 / size; // Calculate the size of each square
