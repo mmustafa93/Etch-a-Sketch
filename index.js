@@ -1,4 +1,6 @@
 const container = document.getElementById("container");
+const gridSizeInput = document.getElementById("grid-size");
+const setGridButton = document.getElementById("set-grid");
 
 function createGrid(size) {
     // Clear any existing grid
@@ -18,5 +20,17 @@ function createGrid(size) {
     }
 }
 
-// Initialize the grid
-createGrid(9); // 16x16 grid
+// Event listener for the "Set Grid" button
+setGridButton.addEventListener("click", () => {
+    const gridSize = parseInt(gridSizeInput.value);
+
+    // Validate input and set grid
+    if (!isNaN(gridSize) && gridSize >= 1 && gridSize <= 100) {
+        createGrid(gridSize);
+    } else {
+        alert("Please enter a number between 1 and 100.");
+    }
+});
+
+// Initialize the grid with the default size
+createGrid(16);
