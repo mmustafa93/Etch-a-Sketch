@@ -6,7 +6,7 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-color: #f9f9f9; /* Softer background color */
+    background-color: #f9f9f9;
     font-family: Arial, sans-serif;
 }
 
@@ -30,7 +30,7 @@ body {
 button {
     padding: 5px 10px;
     border: none;
-    background-color: #6c63ff; /* A vibrant purple shade */
+    background-color: #6c63ff;
     color: white;
     cursor: pointer;
     border-radius: 5px;
@@ -39,8 +39,8 @@ button {
 }
 
 button:hover {
-    background-color: #5a52e3; /* Slightly darker purple */
-    transform: translateY(-2px); /* Adds a slight hover lift effect */
+    background-color: #5a52e3;
+    transform: translateY(-2px);
 }
 
 /* Container */
@@ -48,6 +48,7 @@ button:hover {
     display: flex;
     flex-wrap: wrap;
     width: 600px;
+    height: 600px;
     border: 2px solid #333;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     background-color: #fff;
@@ -57,9 +58,5 @@ button:hover {
 .grid-square {
     box-sizing: border-box;
     border: 1px solid #ddd;
-    transition: background-color 1s ease; /* Longer hover trail */
-}
-
-.grid-square:hover {
-    background-color: #ff6f61; /* A soft coral hover color */
+    transition: background-color 0.2s ease;
 }
